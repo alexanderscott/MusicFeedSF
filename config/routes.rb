@@ -1,7 +1,7 @@
 MusicFeedSF::Application.routes.draw do
 
   resources :tweets
-  resources :events
+  resources :concerts
 
   root "pages#index"
 

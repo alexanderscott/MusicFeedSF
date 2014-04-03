@@ -1,14 +1,14 @@
 require 'eventbrite-client'
 
-class EventsController < ApplicationController
+class ConcertsController < ApplicationController
 
   def index
     eb_auth_tokens = { app_key: ENV['EVENTBRITE_API_KEY'] }
                        #access_token: ENV['EVENTBRITE_OAUTH_TOKEN']}
 
-    @eb_client = EventbriteClient.new(eb_auth_tokens)    
+    @concert_client = EventbriteClient.new(eb_auth_tokens)    
 
-    @events = @eb_client.event_search({
+    @concerts = @concert_client.event_search({
       keywords: 'art',
       category: 'entertainment,fundraisers,other,performances,social,tradeshows,fairs',
       city: 'San Francisco',
@@ -18,7 +18,7 @@ class EventsController < ApplicationController
       max: '100'
     })
 
-    p @events
+    p @concerts
 
   end
 
