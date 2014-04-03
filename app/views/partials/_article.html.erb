@@ -1,0 +1,18 @@
+<li class="media article">
+  <a class="pull-left" href="<%= article.blog_url %>">
+    <img class="article-logo media-object" src="<%= article.blog_image %>"/>
+  </a>
+  <div class="media-body">
+    <h4 class="media-heading"><a href="<%= article.url %>"><%= article.title %></a></h4>
+    <h6 class="media-subheading text-gray">
+      <span class="article-blog-name"><%= article.blog_name %>  |  </span>
+      <% if article.author %><span class="article-blog-author"><%= article.author %>  |  </span><% end %>
+      <span class="article-published text-timeago" data-timestamp="<%= article.published.to_s.gsub(/UTC/, 'Z') %>"></span> 
+    </h6>
+    <% if article.summary %>
+      <p class="article-summary">
+        <%= sanitize article.summary, tags: %w(a), attributes: %w(href target) %>
+      </p>
+    <% end %>
+  </div>
+</li>

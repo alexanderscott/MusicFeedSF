@@ -1,0 +1,19 @@
+<li class="media tweet">
+  <%#<div class="tweet media" style="margin: 10px 0 10px">%>
+    <a class="pull-left" href="https://twitter.com/<%= tweet.user_screen_name %>">
+      <img class="media-object twitter-img" src="<%= tweet.user_image_url %>">
+    </a>
+    <div class="media-body">
+      <p class="text-tweet" style="margin:1px 0 4px;">
+        <div class="row clearfix">
+          <div class="bold pull-left"><a href="https://twitter.com/<%= tweet.user_screen_name %>"><%= tweet.user_name %></a></div>   
+          <div class="text-gray pull-left text-smaller" style="margin-left:10px">@<%= tweet.user_screen_name %></div>   
+          <div class="text-gray text-timeago pull-left text-smaller" style="margin-left: 10px" data-timestamp="<%= tweet.created_at.to_s.gsub(/UTC/, 'Z') %>"></div>
+        </div>
+        <div class="twitter-text">
+          <%=h tweet.text %>
+        </div>
+      </p>
+    </div>
+  <%#</div>%>
+</li>

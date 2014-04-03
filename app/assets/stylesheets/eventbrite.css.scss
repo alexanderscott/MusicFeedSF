@@ -1,0 +1,23 @@
+.eb_event_list_item{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.eb_event_list_title{
+  display:block;
+  padding-left: 20px;
+  width: 400px;
+  overflow: hidden;
+  font-size: larger;
+}
+.eb_event_list_date{
+  position: absolute;
+  left: 30px;
+}
+.eb_event_list_time{
+  position: absolute;
+  left: 155px;
+}
+.eb_event_list_location{
+  position: absolute;
+  left: 230px;
+}
