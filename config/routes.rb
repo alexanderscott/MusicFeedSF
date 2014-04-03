@@ -1,4 +1,4 @@
-ArtBuzzSF::Application.routes.draw do
+MusicFeedSF::Application.routes.draw do
 
   resources :tweets
   resources :events
