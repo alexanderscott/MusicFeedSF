@@ -1,12 +1,12 @@
 # MusicFeedSF
-Hot off the easel: the latest art buzz & events in the Bay Area. Go get your art on.
+Tasty jams & upcoming concerts in the SF Bay Area.   
 
 
 ## Details
-Source code for [MusicFeedSF](http://artfeedsf.com)
+Source code for [MusicFeedSF](http://musicfeedsf.com)
 Feed aggregator containing self-updating:
  * Tweets (Twitter REST API)
- * Events (Eventbrite API)
+ * Concerts (Songkick API)
  * News (RSS Feeds)
 
 

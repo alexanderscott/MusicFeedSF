@@ -1,5 +1,5 @@
 
-<div class="artbuzz-header">
+<div class="musicfeedsf-header">
   <div class="container">
 
     <div class="header-title-wrapper">
@@ -7,12 +7,12 @@
     </div>
     
 
-    <p class="lead" style="color:white;">Hot off the easel: the latest art buzz &amp; events in the Bay Area.  Go get your art on.</p>
+    <p class="lead" style="color:white;">Tasty jams &amp; upcoming concerts in the SF Bay Area.</p>
 
     <div class="nav-tabs-wrapper">
       <ul class="nav nav-tabs">
         <li class="active nav-item"><a class="nav-link" href="#tweets">Tweets</a></li>
-        <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="#concerts">Concerts</a></li>
         <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
       </ul> 
     </div>
@@ -32,8 +32,8 @@
   </div>
 </div>
 <div class="container main-container main-container-events hide">
-  <div class="events-container">
-    <ul id="events-list" class="media-list">
+  <div class="concerts-container">
+    <ul id="concerts-list" class="media-list">
     </ul>
   </div>
 </div>
@@ -126,10 +126,10 @@ $(document).ready(function(){
     }
 
 
-  function getEventTpl(cb){
+  function getConcertTpl(cb){
     $.ajax({
       type: 'GET',
-      url: '/templates/eventbrite-event.html.tpl',
+      url: '/templates/songkick-concert.html.tpl',
       dataType: 'text',
       success: function(tplStr){ 
         cb(null, tplStr); 
@@ -138,9 +138,10 @@ $(document).ready(function(){
     });
   }
 
-  getEventTpl(function(err, eventTplStr){
+  getConcertTpl(function(err, concertTplStr){
 
-    Eventbrite({'app_key': "<%= ENV['EVENTBRITE_API_KEY'] %>" }, function(eb){
+    /*
+    Eventbrite({'app_key': "<%= ENV['SONGKICK_API_KEY'] %>" }, function(eb){
       eb.event_search({
         keywords: 'art,gallery,exhibit',
         category: 'entertainment,fundraisers,other,performances,social,tradeshows,fairs',
@@ -154,6 +155,8 @@ $(document).ready(function(){
         res.events.splice(0, 1);
 //            $(".events-container").html(eb.utils.eventList( res, eb.utils.eventListRow ));
 
+*/
+    /*
         var displayEvents = [];
         $.each( res.events, function(i, obj){
             var event = obj.event;
@@ -198,6 +201,7 @@ $(document).ready(function(){
   });
 
 
+  */
         
 });
 

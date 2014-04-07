@@ -41,7 +41,7 @@ end
 gem 'rack'
 gem 'puma'
 gem "twitter", "~> 5.0.0"
-gem 'eventbrite-client'
+#gem 'eventbrite-client'
 gem "font-awesome-rails"
 gem 'momentjs-rails'
 gem 'underscore-rails'
