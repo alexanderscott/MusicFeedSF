@@ -15,11 +15,46 @@ namespace :articles do
 
     
     feeds = [
+      #{
+        #:blog_name => '',
+        #:blog_url => '',
+        #:feed_url => '',
+        #:blog_image => '',
+        #:must_filter => false
+      #},
       {
-        :blog_name => '',
-        :blog_url => '',
-        :feed_url => '',
-        :blog_image => '',
+        :blog_name => 'The Bay Bridged',
+        :blog_url => 'http://thebaybridged.com/',
+        :feed_url => 'http://feeds.feedburner.com/thebaybridged/feed',
+        :blog_image => 'http://thebaybridged.com/wp-content/uploads/2013/12/baybrided_logo-300x300.png',
+        :must_filter => false
+      },
+      {
+        :blog_name => 'SF Critic',
+        :blog_url => 'http://www.sfcritic.com/',
+        :feed_url => 'http://feeds.feedburner.com/SFCritic',
+        :blog_image => 'http://www.sfcritic.com/wp-content/uploads/2013/08/SF-Critic-logo-makeshift.jpg',
+        :must_filter => false
+      },
+      {
+        :blog_name => 'SF Weekly - Music',
+        :blog_url => 'http://www.sfweekly.com/music/',
+        :feed_url => 'http://www.sfweekly.com/syndication/section/music/',
+        :blog_image => 'http://www.sfweekly.com/img/citylogo-lg.png',
+        :must_filter => false
+      },
+      {
+        :blog_name => 'I Heart SF Bands',
+        :blog_url => 'http://www.iheartsfbands.com/',
+        :feed_url => 'http://www.iheartsfbands.com/feed/',
+        :blog_image => 'http://www.iheartsfbands.com/blog/wp-content/themes/modularity/images/slideshow/image5.jpg',
+        :must_filter => false
+      },
+      {
+        :blog_name => 'Live Music Blog SF',
+        :blog_url => 'http://livemusicblog.com/tag/san-francisco/',
+        :feed_url => 'http://livemusicblog.com/feed/',
+        :blog_image => 'http://livemusicblog.com/wp-content/uploads/2014/01/LiveBlog_Logo_300x105.png',
         :must_filter => false
       }
     ]
