@@ -1,0 +1,14 @@
+bin/*
+
+/.bundle
+
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+/log/*.log
+
+/tmp
+
+config/environment.yml
+config/database.yml
+Capfile
