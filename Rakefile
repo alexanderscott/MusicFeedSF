@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-ArtBuzzSF::Application.load_tasks
+MusicFeedSF::Application.load_tasks
