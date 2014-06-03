@@ -138,9 +138,11 @@ $(document).ready(function(){
     });
   }
 
-  getConcertTpl(function(err, concertTplStr){
 
     /*
+
+  getConcertTpl(function(err, concertTplStr){
+
     Eventbrite({'app_key': "<%= ENV['SONGKICK_API_KEY'] %>" }, function(eb){
       eb.event_search({
         keywords: 'art,gallery,exhibit',
