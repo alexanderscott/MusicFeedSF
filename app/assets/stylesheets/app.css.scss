@@ -56,6 +56,7 @@ ul {
   font-weight: bold;
 }
 
+/*
 
 .event-logo {
   width: 50px;
@@ -72,7 +73,7 @@ ul {
 .eventbrite-event .media-body {
   margin-top: 5px;
 }
-
+*/
 
 .popover {
   max-width: 800px !important;
@@ -220,7 +221,7 @@ body > .container.main-container {
   text-align: left;
 
   // light blue
-  background-image: linear-gradient(to bottom, #5cb85c 0, #dff0d8 100%);
+  background-image: linear-gradient(to bottom, #5cb85c 0, #70BF6B 100%);
 
   h1 {
     text-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
@@ -246,6 +247,13 @@ body > .container.main-container {
   // #f0ad4e
   // light - #fcf8e3
   // darkest - #8a6d3b
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 
   .nav-tabs-wrapper {
     padding-top: 20px;
