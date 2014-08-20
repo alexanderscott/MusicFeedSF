@@ -40,7 +40,7 @@ namespace :articles do
         :blog_name => 'SF Weekly - Music',
         :blog_url => 'http://www.sfweekly.com/music/',
         :feed_url => 'http://www.sfweekly.com/syndication/section/music/',
-        :blog_image => 'http://www.sfweekly.com/img/citylogo-lg.png',
+        :blog_image => 'http://www.sfweekly.com/images/citylogo-lg.png',
         :must_filter => false
       },
       {
