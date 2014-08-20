@@ -65,6 +65,7 @@ namespace :articles do
 
     feeds.each do |feed|
       feed_obj = Feedjira::Feed.fetch_and_parse(feed[:feed_url])
+      next if feed_obj.is_a?(Fixnum)
       feed_obj.entries.each do |entry|
         entry.sanitize!
 
